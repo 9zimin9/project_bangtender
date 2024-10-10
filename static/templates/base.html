@@ -1,0 +1,47 @@
+<!-- 네브바, 푸터 -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'index' %}"><img src="{% static/images 'logo.png' %}" alt="방텐더 로고" class="logo"></a>
+        <nav>
+            <a href="{% url 'liquor_list' %}">주류</a>
+            <a href="{% url 'cocktail_list' %}">칵테일</a>
+            <a href="{% url 'bot' %}">방텐더봇</a>
+            <a href="{% url 'store_locator' %}">주변 매장 찾기</a>
+        </nav>
+        <div class="search-bar">
+            <input type="search" placeholder="Search">
+            <button>검색</button>
+        </div>
+        <a href="{% url 'profile' %}">
+            <button class="profile-button">내 프로필</button>
+        </a>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- 각 페이지에서 채울 부분 -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <!-- 푸터 일단 각자 블로그 주소로 연결 -->
+            <div class="team-members">
+                <a href="https://queseraseralife.tistory.com/" target="_blank">김동민</a> 
+                <a href="https://zhelddustmq.tistory.com/" target="_blank">김진영</a>
+                <a href="https://velog.io/@mimi3123832/posts" target="_blank">남지민</a>
+                <a href="https://insight986.tistory.com/" target="_blank">배민석</a>
+            </div>
+            <p>&copy; 2024 방텐더. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

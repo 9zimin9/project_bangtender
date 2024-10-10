@@ -1,0 +1,36 @@
+/* 메인 페이지 스타일 */
+.tip {
+    background-color: #92c1bd;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.cocktail-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.cocktail-title {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 2rem;
+    color: #317c77;
+    margin: 0 1rem;
+    white-space: pre-wrap; /* 줄바꿈 허용으로 변경 */
+    line-height: 1.5;      /* 줄 간격 조정 */
+    text-align:right;
+}
+
+.left-title {              /* 왼쪽 정렬로 */
+    .imsi { text-align: right; }
+}
+
+
+.cocktail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    flex-grow: 1;
+}

@@ -1,0 +1,16 @@
+<!-- 주류 항목별 페이지 -->
+{% extends 'base.html' %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'liquor.css' %}">
+{% endblock %}
+{% block content %}
+<main>
+    <div class="tip">
+        <p>Tips : 그거 아셨나요? 맨해튼은 칵테일의 여왕이라는 별명을 가지고 있습니다.</p>
+    </div>
+    <h1>위스키</h1>
+    <div class="liquor-grid" id="liquor-container">
+        <!-- 주류 제품들 이곳에,,(동적) -->
+    </div>
+</main>
+{% endblock %}

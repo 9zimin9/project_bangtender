@@ -1,0 +1,22 @@
+<!-- 프로필 조회 페이지 -->
+{% extends 'base.html' %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'profile.css' %}">
+{% endblock %}
+{% block content %}
+<main>
+    <div class="login-container">
+        <h2 class="login-title">프로필</h2>
+        <form class="login-form">
+            <label for="id">ID</label>
+            <input type="text" id="id" placeholder="ID" required>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" placeholder="PASSWORD" required>
+            <button type="submit">로그인</button>
+        </form>
+        <div class="signup-link">
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+</main>
+{% endblock %}

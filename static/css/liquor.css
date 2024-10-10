@@ -1,0 +1,34 @@
+/* 주류 항목별 페이지 스타일 */
+
+.liquor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4개 품목이 1줄에 */
+    gap: 2rem;
+}
+
+.liquor-item {
+    background-color: #eeeeee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.liquor-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.liquor-info {
+    padding: 1rem;
+}
+
+.liquor-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.liquor-price {
+    color: #317c77;
+    font-weight: bold;
+}

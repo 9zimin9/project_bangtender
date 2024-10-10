@@ -1,0 +1,63 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #317c77;
+} */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.tip {
+    background-color: #e0f2f1;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.main-content {
+    display: flex;
+    background-color: #e0f2f1;
+    padding: 20px;
+    position: relative;
+}
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 2.5rem;
+    padding: 20px 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.content-wrapper {
+    display: flex;
+    margin-left: 60px;
+    width: 100%;
+}
+.liquor-image {
+    flex: 0 0 200px;
+    height: 200px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc;
+}
+.liquor-image div {
+    text-align: center;
+    color: #666666;
+    font-size: 1.2rem;
+}
+.liquor-info {
+    flex: 1;
+}
+.liquort-info h2 {
+    margin-top: 0;
+}
+.liquor-content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+}
